@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/item_news">
+
+
+    <ImageView
+        android:id="@+id/ivArticleImage"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_star"
+        android:contentDescription="Article" />
+
+    <TextView
+        android:id="@+id/tvSource"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Google.com"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintStart_toStartOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivArticleImage" />
+
+    <TextView
+        android:id="@+id/tvDatePublished"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20.06.2021"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintStart_toStartOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvSource" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:text="Some title things there we have to many text so its Some title things there we have to many text so its Some title things there we have to many text so its "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=" title things there we have to many text so its  title things there we have to many text so its  title things there we have to many text so its  title things there we have to many text so its  title things there we have to many text so its  title things there we have to many text so its  title things there we have to many text so its "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
